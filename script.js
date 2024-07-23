@@ -8,7 +8,7 @@ const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 const player0 = document.querySelector('.player--0');
 const player1 = document.querySelector('.player--1');
-const WIN_SCORE = 20;
+const WIN_SCORE = 100;
 
 const scores = [0, 0];
 let currentScore = 0;
@@ -88,6 +88,7 @@ btnNew.addEventListener('click', function () {
     scores[i] = 0;
     refreshLabelCurrent(i, 0);
     refreshLabelScore(i, 0);
+    document.getElementById(`name--${i}`).textContent = `Player ${i + 1}`;
   }
   scores[0] = 0;
   scores[1] = 0;
