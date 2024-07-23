@@ -20,7 +20,7 @@ const generateRandomNumber = function () {
 };
 
 const displayDice = function (number) {
-  diceImage.src = `dice-${number}.png`;
+  diceImage.src = `images/dice-${number}.png`;
 };
 
 const refreshLabelScore = function (id, score) {
